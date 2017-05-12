@@ -8,7 +8,10 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.graphics.Outline;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 
 import mx.com.iubix.ejercicio.fragments.AmigosFragment;
 import mx.com.iubix.ejercicio.fragments.Destacadosfragment;
@@ -38,15 +41,12 @@ public class My_music extends Activity implements ActionBar.TabListener{
         }
 
         fragmentTransaction.show(fragments[0]).commit();
-
-
     }
 
     private void setTabs(){
 
         ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-
         actionBar.addTab(actionBar.newTab().setText("Destacados").setTabListener(this));
         actionBar.addTab(actionBar.newTab().setText("Amigos").setTabListener(this));
         actionBar.addTab(actionBar.newTab().setText("Perfil").setTabListener(this));

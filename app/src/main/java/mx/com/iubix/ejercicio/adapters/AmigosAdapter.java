@@ -45,9 +45,9 @@ public class AmigosAdapter extends RecyclerView.Adapter<AmigosAdapter.ViewHolder
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView amigoNombre;
-        public TextView amigoTwitter;
-        public TextView ultimaCancion;
+        TextView amigoNombre;
+        TextView amigoTwitter;
+        TextView ultimaCancion;
 
         public ViewHolder(View itemView) {
             super(itemView);

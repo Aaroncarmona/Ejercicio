@@ -59,7 +59,8 @@ public class Destacadosfragment extends Fragment {
 
             @Override
             public void onResponse(JSONArray response) {
-                Log.e("Valor del nombre: ",JsontoArray(response).get(0).getSongName());
+                Log.e("Error: ",response.toString());
+
                 progressDialog.cancel();
             }
         }, new Response.ErrorListener() {
@@ -86,7 +87,7 @@ public class Destacadosfragment extends Fragment {
 
     }
 
-    public ArrayList<Cancion> JsontoArray (JSONArray response ){
+    public ArrayList<Cancion> parser (JSONArray response ){
         ArrayList<Cancion> aux = new ArrayList<Cancion>();
 
         for(int i = 0 ; i < response.length() ; i++){
