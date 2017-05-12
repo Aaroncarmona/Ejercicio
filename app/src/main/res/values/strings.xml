@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio Platzi!</string>
+    <string name="fragment1">Este es el fragmento 1</string>
+    <string name="fragment2">Este es el fragmento 2</string>
+    <string name="bienvenido">Bienvenido a tu APP de musica</string>
+    <string name="snackBarBienvenido">En un momento te mostramos tu musica!</string>
+    <string name="abrir">Abir</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
